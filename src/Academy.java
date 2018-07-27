@@ -667,7 +667,7 @@ public class Academy extends javax.swing.JFrame {
             int memHeight = Integer.parseInt(height.getText());
             int memAadhar = Integer.parseInt(aadhar.getText());
 
-            String sql = "INSERT INTO members (`memId`, `memName`, `memContact`, `memGender`,'memBloodGrp', `memPAddress`, `memTAddress`, `memEmail`, `memDob`, `memAge`, `memHeight`, `memWeight`, `memAadhar`, `memMedical`, `memQualification`, `memFatherName`, `memCourse`, `memOccupation`, `memInjury`,`memPaymentMode`) VALUES ('"+memId+"','"+memName+"','"+memContact+"','"+memGender+"','"+memBloodGrp+"','"+memPAddress+"','"+memTAddress+"','"+memEmail+"','"+memDob+"','"+memAge+"','"+memHeight+"','"+memWeight+"','"+memAadhar+"','"+memMedical+"','"+memQualification+"','"+memFatherName+"','"+memCourse+"','"+memOccupation+"','"+memInjury+"','"+memPaymentMode+"')";
+            String sql = "INSERT INTO 'academy' (`memId`, `memName`, `memContact`, `memGender`,'memBloodGrp', `memPAddress`, `memTAddress`, `memEmail`, `memDob`, `memAge`, `memHeight`, `memWeight`, `memAadhar`, `memMedical`, `memQualification`, `memFatherName`, `memCourse`, `memOccupation`, `memInjury`,`memPaymentMode`) VALUES ('"+memId+"','"+memName+"','"+memContact+"','"+memGender+"','"+memBloodGrp+"','"+memPAddress+"','"+memTAddress+"','"+memEmail+"','"+memDob+"','"+memAge+"','"+memHeight+"','"+memWeight+"','"+memAadhar+"','"+memMedical+"','"+memQualification+"','"+memFatherName+"','"+memCourse+"','"+memOccupation+"','"+memInjury+"','"+memPaymentMode+"')";
             stmt.executeUpdate(sql);
             JOptionPane.showMessageDialog(null, "DATA IS SUCCESSFULLY INSERTED");
         }
